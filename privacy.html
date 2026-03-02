@@ -1,53 +1,261 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <title>Privacy Policy — AssetBox Oy</title>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy — AssetBox Oy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg-start:#1b2b5a;
+      --bg-end:#243a79;
+      --card:#ffffff;
+      --card-muted:#f4f6fb;
+      --accent:#7aa2ff;
+      --accent-strong:#2c6dff;
+      --ink:#1b2230;
+      --ink-muted:#4a5568;
+      --ring: rgba(44,109,255,.35);
+      --shadow: 0 8px 28px rgba(0,0,0,.22);
+      --radius: 16px;
+    }
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #2b438f22, transparent 60%),
+        radial-gradient(900px 500px at 110% 10%, #2b438f1a, transparent 55%),
+        linear-gradient(180deg, var(--bg-start), var(--bg-end));
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    header{
+      color:#fff;
+      padding:48px 20px 28px;
+      text-align:center;
+    }
+
+    header h1{
+      margin:0 0 10px;
+      font-size:clamp(1.6rem, 2.4vw + 1rem, 2.4rem);
+      font-weight:700;
+      letter-spacing:.2px;
+    }
+
+    header p{
+      margin:0 auto;
+      max-width:780px;
+      color:#e7edff;
+      line-height:1.6;
+      font-size:1rem;
+    }
+
+    .wrap{
+      width:min(100%, 960px);
+      margin:0 auto;
+      padding:24px;
+      flex:1;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:40px;
+    }
+
+    h2{
+      color:#233a84;
+      margin-top:40px;
+      margin-bottom:14px;
+    }
+
+    p, li{
+      font-size:16px;
+      line-height:1.65;
+      color:var(--ink);
+    }
+
+    ul{
+      padding-left:22px;
+    }
+
+    .icon-title{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .icon{
+      width:32px;
+      height:32px;
+      background:#e9efff;
+      border-radius:50%;
+      border:1px solid #d8e3ff;
+      display:grid;
+      place-items:center;
+    }
+    .icon svg{
+      width:18px;
+      height:18px;
+      fill:#2c6dff;
+    }
+
+    nav{
+      margin-top:30px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      border:1px solid #c8d6ff;
+      color:#0b1f5a;
+      background:linear-gradient(180deg,#ffffff,#f5f8ff);
+      transition:.2s;
+    }
+    .btn:hover{
+      background:linear-gradient(180deg,#ffffff,#eef3ff);
+      transform:translateY(-1px);
+      box-shadow:0 6px 16px rgba(44,109,255,.15);
+    }
+    .btn.primary{
+      color:white;
+      border:none;
+      background:linear-gradient(180deg,var(--accent),var(--accent-strong));
+      box-shadow:0 6px 18px var(--ring);
+    }
+
+    footer{
+      text-align:center;
+      color:#cfd8ff;
+      font-size:.9rem;
+      padding:24px 16px 40px;
+    }
+  </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>This Privacy Policy explains how AssetBox Oy collects, uses, and protects personal data for users located in Finland, the European Union, and internationally.</p>
 
-<h2>1. Data We Collect</h2>
-<p>We collect the following categories of data:</p>
-<ul>
-    <li><strong>Personal Identification Data</strong> (name, email address, account information)</li>
-    <li><strong>Financial Information</strong> (data required to provide finance-related services)</li>
-    <li><strong>Transaction Data</strong> (records of in-app operations and financial activities initiated by the user)</li>
-    <li><strong>Device and Technical Data</strong> (app usage, device identifiers, logs)</li>
-</ul>
+<header>
+  <h1>Privacy Policy</h1>
+  <p>This Privacy Policy describes how <strong>AssetBox Oy</strong> collects, processes, and protects user data in Finland, the EU, and internationally.</p>
+</header>
 
-<h2>2. Legal Basis and GDPR Compliance</h2>
-<p>As a company operating in Finland, AssetBox Oy complies fully with the General Data Protection Regulation (GDPR). We process personal data based on:</p>
-<ul>
-    <li>User consent</li>
-    <li>Contractual necessity</li>
-    <li>Legal obligations under regional and local law</li>
-</ul>
+<main class="wrap">
+  <section class="card">
 
-<h2>3. How We Use Data</h2>
-<p>User data is used to:</p>
-<ul>
-    <li>Provide and improve our financial application and services</li>
-    <li>Ensure security, fraud prevention, and regulatory compliance</li>
-    <li>Communicate necessary service-related updates</li>
-</ul>
+    <!-- Section 1 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+      </div>
+      <h2>1. Data We Collect</h2>
+    </div>
+    <p>We collect the following categories of data:</p>
+    <ul>
+      <li><strong>Personal Identification Data</strong> (name, email address, account information)</li>
+      <li><strong>Financial Information</strong> (data required to provide finance-related services)</li>
+      <li><strong>Transaction Data</strong> (records of in-app operations and activities)</li>
+      <li><strong>Device & Technical Data</strong> (usage logs, identifiers, analytics)</li>
+    </ul>
 
-<h2>4. Data Sharing</h2>
-<p>We do not sell user data. Data is shared only with:</p>
-<ul>
-    <li>Trusted third‑party processors (e.g., cloud infrastructure providers)</li>
-    <li>Regulatory authorities, when required by law</li>
-</ul>
+    <!-- Section 2 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 4.16 10.74 8.56 12 4.4-1.26 8.44-6.27 8.44-12V5l-8-4zM7 10h10v2H7v-2z"/></svg>
+      </div>
+      <h2>2. Legal Basis & GDPR Compliance</h2>
+    </div>
+    <p>AssetBox Oy complies fully with the General Data Protection Regulation (GDPR). We process data based on:</p>
+    <ul>
+      <li>User consent</li>
+      <li>Contractual necessity</li>
+      <li>Legal obligations under regional and local law</li>
+    </ul>
 
-<h2>5. Data Retention</h2>
-<p>Data is retained only for as long as necessary to fulfill service and legal requirements.</p>
+    <!-- Section 3 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 0 0-8 8c0 4.42 3.58 8 8 8s8-3.58 8-8a8 8 0 0 0-8-8zm3.59 8.59L11 9v6l4.59-2.41z"/></svg>
+      </div>
+      <h2>3. How We Use Data</h2>
+    </div>
+    <p>User data is used to:</p>
+    <ul>
+      <li>Provide and improve financial services</li>
+      <li>Ensure security, fraud prevention, and regulatory compliance</li>
+      <li>Communicate important service-related updates</li>
+    </ul>
 
-<h2>6. Account & Data Deletion</h2>
-<p>Users can request full account deletion and removal of all associated personal data at any time by emailing <strong>assetboxdev@gmail.com</strong>. All data will be permanently deleted within 30 days, except where retention is required by law.</p>
+    <!-- Section 4 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M12 12l8-6H4l8 6zm0 2l-8-6v10h16V8l-8 6z"/></svg>
+      </div>
+      <h2>4. Data Sharing</h2>
+    </div>
+    <p>We do not sell user data. Data is shared only with:</p>
+    <ul>
+      <li>Trusted third‑party processors (e.g., cloud infrastructure providers)</li>
+      <li>Regulatory authorities when legally required</li>
+    </ul>
 
-<h2>7. Contact</h2>
-<p>For privacy inquiries, contact AssetBox Oy at: <strong>assetboxdev@gmail.com</strong>.</p>
+    <!-- Section 5 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M18 2H6a2 2 0 0 0-2 2v16l8-4 8 4V4a2 2 0 0 0-2-2z"/></svg>
+      </div>
+      <h2>5. Data Retention</h2>
+    </div>
+    <p>Data is stored only as long as necessary to meet service and legal requirements.</p>
+
+    <!-- Section 6 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v14l-7-3-7 3V6a2 2 0 0 1 2-2z"/></svg>
+      </div>
+      <h2>6. Account & Data Deletion</h2>
+    </div>
+    <p>Users may request full account deletion by emailing <strong>assetboxdev@gmail.com</strong>. Data is deleted within 30 days unless retention is required by law.</p>
+
+    <!-- Section 7 -->
+    <div class="icon-title">
+      <div class="icon">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+      </div>
+      <h2>7. Contact</h2>
+    </div>
+    <p>For privacy-related inquiries, contact: <strong>assetboxdev@gmail.com</strong></p>
+
+    <!-- Navigation -->
+    <nav aria-label="Primary">
+        <a href='index.html' class="btn primary  <svg class="mini" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 4h7l5 5v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm7 1v4h4" />
+          </svg>
+          Home
+        </a>
+      </nav>
+
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> AssetBox Oy. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
